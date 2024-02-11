@@ -14,7 +14,7 @@ class SpringBootJenkinsIntegrationApplicationTests {
     @Test
     void contextLoads() {
         logger.info("Test case executed");
-        logger.info("Test case executed....");
+        logger.info("Test case executed....1");
         assert true;
     }
 
