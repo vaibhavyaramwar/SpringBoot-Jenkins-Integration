@@ -6,5 +6,4 @@ COPY src /home/app/src
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
 EXPOSE 8080
-ADD target/spring-boot-jenkins-int.jar spring-boot-jenkins-int.jar
-ENTRYPOINT ["java","-jar","/spring-boot-jenkins-int.jar"]
+ENTRYPOINT ["java","-jar","/home/app/target/spring-boot-jenkins-int.jar"]
